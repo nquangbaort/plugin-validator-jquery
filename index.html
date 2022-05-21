@@ -30,7 +30,7 @@
     <script src="assets/js/index.js"></script>
     <script>
         $(function() {
-            $('.validator').validator(1, 1)
+            $('.validator').validator(validateSuccess, validateError)
             $('form').formValidator(function() {
                 console.log('success')
             }, function() {
