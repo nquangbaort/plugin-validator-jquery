@@ -1,0 +1,6 @@
+.is-invalid {
+  border: 1px solid #dc3545;
+}
+input {
+    outline: none;
+}

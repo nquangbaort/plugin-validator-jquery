@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>validator</h1>
+    <form id="form" method="post" action="index.php">
+        <input type="" class='validator' rules="required" />
+        <span></span>
+        <!-- <input type="text" class='validator' rules="required|password" />
+        <span></span>
+
+        <input type="number" class='validator' rules="required|number" />
+        <span></span>
+        <input type="number" class='validator' rules="required|between:1,10" /> -->
+        <!-- <span></span> -->
+        <input type="submit" />
+    </form>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        $(function() {
+            $('.validator').validator(1, 1)
+            $('form').formValidator(function() {
+                console.log('success')
+            }, function() {
+                console.log('error')
+            }, function() {
+                // $('#form').submit();
+            })
+        })
+    </script>
+</body>
+
+</html>
